@@ -1,0 +1,239 @@
+/**
+ * Versión 1.0.0
+ */
+ @charset "utf-8";
+
+ /**
+  * Fonts
+  */
+ @import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+ 
+ /**
+  * Mobile
+  */
+ 
+ /** General */
+ html {
+     box-sizing: border-box;
+ }
+ 
+ *, *:before, *:after {
+     box-sizing: inherit;
+ }
+ 
+ * {
+     margin: 0;
+     padding: 0;
+     font-size: 10px;
+     line-height: 1;
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 400;
+ }
+ 
+ /** Body */ 
+ 
+ /** Header */
+ header {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 2em;
+     background-color: #134F5C;
+     color: white;
+ }
+ 
+
+ h1{
+    font-family: 'Montserrat';
+    font-size: 3.6em;
+    line-height: 1.5;
+    font-weight: 700;
+    text-align: center;
+ }
+
+ h2 {
+     font-family: 'Montserrat';
+     font-size: 3.6em;
+     line-height: 1.5;
+     font-weight: 700;
+     text-align: center;
+     padding-top: 20px;
+     color: #134F5C;
+     background-color: white;
+ }
+ 
+
+section {
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    padding: 4em 2em;
+    background-color: #FFF;
+ }
+ 
+ 
+ main button {
+    margin: 10px; 
+    border: none;
+    border-radius: .5em;
+    padding: .5em .5em; 
+    background: #134F5C;
+    cursor: pointer;
+    font-size: 2.4em;
+    line-height: 1.5;
+    text-align: center;
+    color: white;
+ }
+ 
+ footer {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     padding: 2em;
+     background-color: #134F5C;
+     color: #D0E0E3;
+     
+ }
+ 
+ footer ul {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+     width: 100%;
+     list-style: none;
+ }
+ 
+ footer ul li {
+     font-family: 'Montserrat';
+     font-size: 1.4em;
+     line-height: 1.5;
+     text-align: center;
+ }
+ 
+ footer ul li a {
+     font-family: 'Montserrat';
+     font-size: 1em;
+     text-decoration: none;
+     color: #D0E0E3;
+ }
+ 
+ footer ul li a:hover {
+     color: #a2c4c9;
+ }
+ 
+ /** Overs */
+ main button:hover {
+     opacity: .8;
+ }
+ 
+ /**
+  * Web
+  */
+ @media screen and (min-width: 960px) {
+ 
+     /** Main */
+     main div.galeria {
+         flex-direction: row;
+     }
+ 
+     main div.galeria > img {
+         max-width: 24%;
+         margin: 1em .5%;
+     }
+ 
+     main div.galeria div {
+         align-self: flex-start;
+         width: 30%;
+     }
+ 
+     /** Footer */
+     footer ul {
+         flex-direction: row;
+     }
+ 
+ }
+
+.tituloDisco{
+    width: 100%;
+ }
+
+ section{
+    background-color: #FFF;
+    color: black;
+    padding: 15px;
+ }
+
+ .discos{
+    display: inline-block;
+    background: #134F5C;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    margin-left: 5%;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+    width: 40%;
+    vertical-align: top;
+ }
+
+ .discos p{
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    line-height: 40px;
+ }
+
+ .discos li{
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    line-height: 40px;
+    list-style-type: none;
+ }
+
+ .discos textarea{
+    background: #134F5C;
+    border-radius: 4px;
+    color: white;
+    width: 100%;
+    font-family: 'calibri';
+    font-size: 18px;
+    padding: 10px;
+ }
+
+
+ .discos2{
+    background: #134F5C;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+    width: 100%;
+ }
+
+ .discos2 p{
+    text-align: center;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    line-height: 40px;
+ }
+
+ .disco2 textarea{
+    background: #24303c;
+    border-radius: 4px;
+    color: white;
+    width: 100%;
+    font-family: 'calibri';
+    font-size: 18px;
+    padding: 10px;
+ }
+
